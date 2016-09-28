@@ -1,0 +1,11 @@
+JAVA_HOME=/opt/java
+ORG=/home/francoisa/github/francoisa
+LIB=${ORG}/reverse_jni/lib
+LD_LIBRARY_PATH=${LIB}
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${JAVA_HOME}/jre/lib/amd64
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${JAVA_HOME}/jre/lib/amd64/server
+export LD_LIBRARY_PATH
+JAVAPROJ=${ORG}/calculator
+CLASSPATH=${JAVAPROJ}/target/calc-1.0.jar
+CLASSPATH=${CLASSPATH}:${JAVAPROJ}/lib/antlr-runtime-4.5.3.jar
+export CLASSPATH
